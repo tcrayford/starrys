@@ -1,4 +1,6 @@
 Starrys::Application.routes.draw do
+  get ":username/photos" => 'photos#index'
+
   devise_for :users
 
   # The priority is based upon order of creation:
